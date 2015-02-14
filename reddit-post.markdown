@@ -1,6 +1,6 @@
-I'm looking for a way to store and query command metadata.
+I'm looking for a way to store and query commands and their metadata.
 
-There are lots of programs to help remember how to use commands:
+There are plenty of projects that try to make using shell commands easier:
 
 <https://github.com/chrisallenlane/cheat>
 
@@ -8,28 +8,30 @@ There are lots of programs to help remember how to use commands:
 
 <https://github.com/tldr-pages/tldr>
 
-However, they tend to be limited to categorizing single commands. Does counting files with `find . -type f | wc -l` go under `find` or `wc`?
+<http://bropages.org/>
 
-They also tend to lack metadata, which makes querying difficult.
+However, they are limited to categorizing under single commands. Does counting files with `find . -type f | wc -l` go under `find` or `wc`?
 
-For example, a search for `exec` might return information about the shell builtin, or it might return information about `-exec`, the `find` command flag.
+We've also got an online, searchable repository of shell commands:
 
-As I've been learning the command line, I've been keeping notes on how to use various commands in a single long text file. It's commented like a shell script:
+<http://www.commandlinefu.com/commands/browse>
 
-    # Find out what kind of files are in the current directory and its subdirectories.
-    find . -type f -exec file '{}' \; | less
+But there's no separation between the command and the metadata, which makes efficient querying difficult.
 
-Unfortunately, this file is getting big (more than 1000 lines excluding blank lines and comments) and it's becoming hard to find things.
+For example, a search for `exec` returns results for the word "execute", the shell builtin `exec`, and the `find` command flag `-exec`.
 
-For example, if I'm looking for examples on how to use the `cut(1)` command and I search for "cut", I get matches for "executable" and "shortcut"
+<http://www.commandlinefu.com/commands/matching/exec/ZXhlYw==/sort-by-votes>
 
-If I try to avoid this problem by adding spaces and searching for " cut " I exclude lines that start with "cut" and still get matches I don't want, e.g. how to cut a word in `bash` (Ctrl-W).
+There's adequate information in the man pages, but man pages don't tell you how to use commands and shell variables together, like this:
 
-Because it's hard to find commands, I sometimes accidentally add duplicate (or nearly duplicate) commands and don't realize it until much later.
+    chsh --shell $(which zsh) $USER
 
-Sure, plenty of the information is in the man pages, but sometimes things are (e.g. `date -I` is [undocumented](https://lists.gnu.org/archive/html/bug-coreutils/2006-01/msg00155.html)), and a lot of it is adapted to specific examples I've used before.
+Man pages don't document all behavior, either; `date -I` works just fine, but it's
+[undocumented](https://lists.gnu.org/archive/html/bug-coreutils/2006-01/msg00155.html).
 
-Finally, there is a lot of infrmation a search engine query away, but searching for shell commands is a nuisance. Google ignores most punctuation and DuckDuckGo interprets `!` as commands.
+Finally, there is a lot of information a search engine query away, but searching for shell commands is a nuisance. Google ignores most punctuation and DuckDuckGo interprets `!` as commands.
+
+Here's an example of a command with some useful metadata:
 
 Related discussion:
 
