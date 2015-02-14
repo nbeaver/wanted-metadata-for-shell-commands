@@ -8,9 +8,9 @@ There are lots of ways to help remember how to use commands:
 
 <https://github.com/tldr-pages/tldr>
 
-However, they tend to be limited to single commands, and pipes are pretty important. They also tend to lack metadata, which makes querying difficult.
+However, they tend to be limited to single commands, and pipes are pretty important. For example, does `find . -type f | wc -l` go under `find` or `wc`?
 
-For example, does `find . -type f | wc -l` go under `find` or `wc`?
+They also tend to lack metadata, which makes querying difficult.
 
 A bit of background: as I've been learning the command line, I've been keeping notes on how to use various commands in a single long text file. It's commented like a shell script, e.g.
 
@@ -36,3 +36,5 @@ Suggests using comments in shell history as tags or making a bunch of aliases, b
 https://github.com/chrisallenlane/cheat
 
 https://www.reddit.com/r/learnprogramming/comments/1z6jd1/how_does_one_remember_commands_and_syntax/
+
+https://www.reddit.com/r/linux4noobs/comments/1k8etl/whats_the_best_way_to_rememberstore_commands/
