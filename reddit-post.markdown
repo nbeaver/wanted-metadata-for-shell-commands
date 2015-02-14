@@ -14,14 +14,16 @@ They also tend to lack metadata, which makes querying difficult.
 
 For example, a search for `exec` might return information about the shell builtin, or it might return information about `-exec`, the `find` command flag.
 
-As I've been learning the command line, I've been keeping notes on how to use various commands in a single long text file. It's commented like a shell script, e.g.
+As I've been learning the command line, I've been keeping notes on how to use various commands in a single long text file. It's commented like a shell script:
 
     # Find out what kind of files are in the current directory and its subdirectories.
     find . -type f -exec file '{}' \; | less
 
 Unfortunately, this file is getting big (more than 1000 lines excluding blank lines and comments) and it's becoming hard to find things.
 
-For example, if I'm looking for examples on how to use the `cut(1)` command and I search for "cut", I get matches for "executable" and "shortcut", and if I search for " cut " I exclude lines that start with "cut" and get matches for how to cut a word in `bash` (Ctrl-W).
+For example, if I'm looking for examples on how to use the `cut(1)` command and I search for "cut", I get matches for "executable" and "shortcut"
+
+If I try to avoid this problem by adding spaces and searching for " cut " I exclude lines that start with "cut" and still get matches I don't want, e.g. how to cut a word in `bash` (Ctrl-W).
 
 Because it's hard to find commands, I sometimes accidentally add duplicate (or nearly duplicate) commands and don't realize it until much later.
 
