@@ -16,7 +16,7 @@ There are plenty of projects that try to make remembering and using shell comman
 
 However, they are limited to categorizing under single commands. Does counting files with `find . -type f | wc -l` go under `find` or `wc`?
 
-There's also got an online, searchable repository of shell commands:
+There's also an online, searchable repository of shell commands:
 
 <http://www.commandlinefu.com/commands/browse>
 
@@ -26,7 +26,7 @@ For example, a search for `exec` returns results for the word "execute", the she
 
 <http://www.commandlinefu.com/commands/matching/exec/ZXhlYw==/sort-by-votes>
 
-We have  [`.desktop` files](http://standards.freedesktop.org/desktop-entry-spec/latest/ar01s05.html) for assigning metadata to applications, but there's no convenient way to interactively query them and they don't have nearly the metadata that would be useful for shell commands (see below).
+We have  [`.desktop` files](http://standards.freedesktop.org/desktop-entry-spec/latest/ar01s05.html) for handling metadata for applications, but there's no convenient way to interactively query them and they don't have nearly the metadata that would be useful for shell commands (see below).
 
 There's adequate information in the man or info pages, but they don't tell you how to use commands and shell variables together, like this:
 
