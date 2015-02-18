@@ -1,6 +1,6 @@
-# Metadata for shell commands. #
+# Wanted: metadata for shell commands. #
 
-I'm looking for a way to store and query shell commands and give them metadata to make querying easier.
+I'm looking for a way to find shell commands more easily by giving them metadata.
 
 ## Motivation ##
 
@@ -61,7 +61,7 @@ Ideally this would be a textual database with commands indexed by e.g. CRC check
 
 Incremental search would be nice, too, but not mandatory.
 
-I've been trying to find existing software that meets most of these requirements, and I haven't had much luck. I'd prefer not to start from scratch.
+I've been trying to find software that meets most of these requirements, and I haven't had much luck. I'd vastly prefer to adapt existing software to my needs, not start from scratch.
 
 ## Example metadata ##
 
@@ -146,4 +146,5 @@ Same suggestions with shell history or using `--help` and `man`.
 
 <http://forums.debian.net/viewtopic.php?f=30&t=111063>
 
-Some good suggestions, but nothing about metadata.
+Some good suggestions, but unfortunately nothing about metadata.
+
