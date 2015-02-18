@@ -29,7 +29,7 @@ There's adequate information in the man pages, but man pages don't tell you how 
 Man pages don't document all behavior, either; `date -I` works just fine, but it's
 [undocumented](https://lists.gnu.org/archive/html/bug-coreutils/2006-01/msg00155.html).
 
-Finally, search engines are great, but searching for shell commands is a nuisance. All major search engines ignore most punctuation even when it's quoted.
+Finally, search engines are great, but searching for shell commands is a nuisance. All major search engines ignore most punctuation even when it's quoted. Trying to find out what this command does by using a web search is non-trivial:
 
     mv -- * .[^.]* ..
 
@@ -39,17 +39,21 @@ Finally, search engines are great, but searching for shell commands is a nuisanc
 
 <http://www.bing.com/search?q=mv+--+*+.[^.]*+..>
 
-It's also nice to be able to search through commands that aren't already in search engines, or search without an internet connection.
+(It moves all files in the current directory, including hidden files, to the parent directory, by the way.)
+
+Search engines have other drawbacks; they require an internet connection and don't have all the one might need commands.
 
 Here's an example of a one-liner with some useful metadata:
 
-command:
+* command:
  
-    ping -i 2 localhost | sed -u 's/.*/ping/' | espeak
+`ping -i 2 localhost | sed -u 's/.*/ping/' | espeak`
 
-long-flags:
+* command with long flags:
 
-    ping -i 2 localhost | sed --unbuffered 's/.*/ping/' | espeak
+`ping -i 2 localhost | sed --unbuffered 's/.*/ping/' | espeak`
+
+* description: generates voice that says "ping" every 2 seconds.
 
 * commands: ping, sed, espeak
 
@@ -59,10 +63,21 @@ long-flags:
 
 * command to end: ctrl-c
 
-* requires sudo?: no
+* requires sudo: no
 
-* related link: <http://ftp.arl.mil/mike/ping.html>
+* informational URL: <http://ftp.arl.mil/mike/ping.html>
 
+* thread-safe: yes
+
+* current working directory matters: no
+
+* affects other processes: no
+
+* modifies filesystem: no
+
+* byte count: 51
+ 
+* CRC checksum: 3025175151
 
 Related discussion:
 
