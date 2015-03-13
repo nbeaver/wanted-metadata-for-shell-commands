@@ -20,6 +20,8 @@ There's also an online, searchable repository of shell commands:
 
 <http://www.commandlinefu.com/commands/browse>
 
+<https://github.com/ncrocfer/clf>
+
 But there's no separation between the command and the metadata, which makes efficient querying difficult.
 
 For example, a search for `exec` returns results for the word "execute", the shell builtin `exec`, and the `find` command flag `-exec`.
@@ -46,6 +48,8 @@ Finally, search engines are great, but searching for shell commands is a nuisanc
 <http://www.bing.com/search?q=mv+--+*+.[^.]*+..>
 
 <http://explainshell.com/explain?cmd=mv+--+*+.[^.]*+..>
+
+<http://symbolhound.com/?q=mv+--+*+.[^.]*+..&l=&e=&n=&u=>
 
 (In case you're curious, it moves all files in the current directory, including hidden files, to the parent directory.)
 
