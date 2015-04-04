@@ -152,3 +152,7 @@ Same suggestions with shell history or using `--help` and `man`.
 
 Some good suggestions, but unfortunately nothing about metadata.
 
+<http://haskellexists.blogspot.de/2015/03/a-very-first-step-towards-fragment.html>
+<https://github.com/phischu/fragnix/>
+
+Haskell-only, but a similar idea.
