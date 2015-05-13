@@ -2,6 +2,8 @@
 
 I'm looking for a way to find shell commands more easily by giving them metadata.
 
+Update: I started a project to realize this here: https://github.com/nbeaver/cmd-oysters
+
 ## Motivation ##
 
 There are plenty of projects that try to make remembering and using shell commands easier:
