@@ -158,3 +158,7 @@ Some good suggestions, but unfortunately nothing about metadata.
 <https://github.com/phischu/fragnix/>
 
 Haskell-only, but a similar idea.
+
+<https://www.reddit.com/r/commandline/comments/34vi7k/how_do_you_keep_track_of_all_of_your_commands_for/>
+
+The difficulties of keeping track of commands.
