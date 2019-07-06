@@ -155,9 +155,14 @@ Same suggestions with shell history or using `--help` and `man`.
 Some good suggestions, but unfortunately nothing about metadata.
 
 <http://haskellexists.blogspot.de/2015/03/a-very-first-step-towards-fragment.html>
+
 <https://github.com/phischu/fragnix/>
 
 Haskell-only, but a similar idea.
+
+<https://github.com/erichs/composure>
+
+Has "a simple system of dynamic keywords that allow you to add metadata to your functions".
 
 <https://www.reddit.com/r/commandline/comments/34vi7k/how_do_you_keep_track_of_all_of_your_commands_for/>
 
